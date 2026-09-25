@@ -23,7 +23,7 @@ Upload the folder as-is to any static host.
 - **Vercel:** run `npx vercel` in this folder and pick the "Other" framework preset with no build command.
 - **Cloudflare Pages:** create a project with no build command and this folder as the output directory.
 
-`404.html` links back to `/`. If you deploy under a sub-path, such as a GitHub project page at `username.github.io/portfolio/`, change that link to the sub-path.
+`404.html` and its favicon link use relative paths, so they work whether the site is deployed at your domain's root or under a sub-path, such as a GitHub project page at `username.github.io/portfolio/`.
 
 ## Structure
 
